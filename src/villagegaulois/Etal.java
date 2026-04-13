@@ -2,7 +2,7 @@ package villagegaulois;
 
 import personnages.Gaulois;
 
-public class Etal {
+public class Etal implements IEtal {
 	private Gaulois vendeur;
 	private String produit;
 	private int quantiteDebutMarche;
@@ -13,6 +13,7 @@ public class Etal {
 		return etalOccupe;
 	}
 
+	@Override
 	public Gaulois getVendeur() {
 		return vendeur;
 	}
